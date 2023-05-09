@@ -8,8 +8,6 @@ mongoose.connect(process.env.mongoConnectionUrl);
 
 const app = express();
 
-const PORT = 3000;
-
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", "./templates");
